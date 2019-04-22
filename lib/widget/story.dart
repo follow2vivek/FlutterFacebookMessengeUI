@@ -4,12 +4,12 @@ import 'package:facebook_messenge_ui/utils/string.dart';
 class Story extends StatelessWidget {
   final widgets = [
     storyAdd(),
-    storyOnline('Anuj'),
+    storyOnline('Anuj', userProfileUrl1),
     storyOffline('Rhishi'),
-    storyOnline('John'),
-    storyOnline('Vivek'),
+    storyOnline('John', userProfileUrl2),
+    storyOnline('Vivek', userProfileUrl1),
     storyOffline('Rohny'),
-    storyOnline('Jitu'),
+    storyOnline('Jitu', userProfileUrl2),
   ];
   @override
   Widget build(BuildContext context) {
@@ -55,7 +55,7 @@ class Story extends StatelessWidget {
     );
   }
 
-  static Widget storyOnline(String name) {
+  static Widget storyOnline(String name, String img) {
     return Padding(
       padding: const EdgeInsets.only(right: 15),
       child: Column(
@@ -70,7 +70,7 @@ class Story extends StatelessWidget {
                   shape: BoxShape.circle,
                   image: DecorationImage(
                     image: NetworkImage(
-                      profileUrl,
+                      img,
                     ),
                     fit: BoxFit.fill,
                   ),

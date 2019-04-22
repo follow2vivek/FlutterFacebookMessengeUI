@@ -4,8 +4,9 @@ class Search extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Theme(
-      data: ThemeData(hintColor: Colors.transparent),
-
+      data: ThemeData(
+        hintColor: Colors.transparent,
+      ),
       child: Container(
         height: 45,
         child: TextField(
@@ -17,6 +18,9 @@ class Search extends StatelessWidget {
               fontFamily: 'Regular',
             ),
             border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(30),
+            ),
+            focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(30),
             ),
             contentPadding: EdgeInsets.symmetric(vertical: 0),

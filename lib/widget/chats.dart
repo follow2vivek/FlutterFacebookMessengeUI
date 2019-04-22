@@ -3,9 +3,10 @@ import 'package:facebook_messenge_ui/utils/string.dart';
 
 class Chats extends StatelessWidget {
   var data = <Widget>[
-    chats("Deshmukh", "Hi, how are you?", true),
-    chats("Vijay", "Say hi to new Facebook friend", false),
-    chats("Akhilesh", "Hi, how are you?", true)
+    chats("Deshmukh", "Hi, how are you?", profileUrl, true),
+    chats("Vijay", "Say hi to new Facebook friend friend friend",
+        userProfileUrl1, false),
+    chats("Akhilesh", "Hi, how are you?", userProfileUrl2, true)
   ];
   @override
   Widget build(BuildContext context) {
@@ -17,7 +18,7 @@ class Chats extends StatelessWidget {
     );
   }
 
-  static Widget chats(String name, String msg, bool readStatus) {
+  static Widget chats(String name, String msg, String imgUrl, bool readStatus) {
     return Container(
       margin: EdgeInsets.only(top: 16),
       child: Row(
@@ -28,7 +29,7 @@ class Chats extends StatelessWidget {
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               image: DecorationImage(
-                image: NetworkImage(profileUrl),
+                image: NetworkImage(imgUrl),
                 fit: BoxFit.fill,
               ),
             ),
@@ -54,6 +55,7 @@ class Chats extends StatelessWidget {
                         msg,
                         overflow: TextOverflow.ellipsis,
                         maxLines: 1,
+                        softWrap: true,
                         style: TextStyle(
                           color: readStatus ? Colors.grey[400] : Colors.black,
                           fontSize: 16,
