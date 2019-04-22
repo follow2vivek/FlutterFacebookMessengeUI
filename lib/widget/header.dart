@@ -43,6 +43,7 @@ class Header extends StatelessWidget {
                 child: Icon(
                   Icons.camera_alt,
                   color: Colors.black,
+                  size: 20,
                 ),
               ),
             ),
@@ -58,6 +59,7 @@ class Header extends StatelessWidget {
             child: Icon(
               Icons.edit,
               color: Colors.black,
+              size: 20,
             ),
           )
         ],

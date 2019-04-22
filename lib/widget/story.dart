@@ -13,17 +13,12 @@ class Story extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
-    return Theme(
-      data: ThemeData(
-        accentColor: Colors.white,
-      ),
-      child: SingleChildScrollView(
-        scrollDirection: Axis.horizontal,
-        child: Row(
-          mainAxisSize: MainAxisSize.max,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: widgets,
-        ),
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+        mainAxisSize: MainAxisSize.max,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: widgets,
       ),
     );
   }
@@ -88,11 +83,14 @@ class Story extends StatelessWidget {
                   width: 20,
                   height: 20,
                   decoration: BoxDecoration(
-                    color: Colors.green,
+                    color: Colors.transparent,
                     shape: BoxShape.circle,
-                    border: Border.all(
-                      color: Colors.white,
-                      width: 3,
+                    border: Border.all(color: Colors.white, width: 3),
+                  ),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.green,
+                      shape: BoxShape.circle,
                     ),
                   ),
                 ),
