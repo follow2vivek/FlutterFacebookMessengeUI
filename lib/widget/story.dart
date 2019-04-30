@@ -1,3 +1,4 @@
+import 'package:facebook_messenge_ui/utils/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:facebook_messenge_ui/utils/string.dart';
 
@@ -47,7 +48,7 @@ class Story extends StatelessWidget {
             style: TextStyle(
               fontSize: 14,
               fontFamily: 'Regular',
-              color: Colors.grey[400],
+              color: colorGreyStoryTitle,
             ),
           )
         ],
@@ -89,7 +90,7 @@ class Story extends StatelessWidget {
                   ),
                   child: Container(
                     decoration: BoxDecoration(
-                      color: Colors.green,
+                      color: colorGreen,
                       shape: BoxShape.circle,
                     ),
                   ),
@@ -102,7 +103,7 @@ class Story extends StatelessWidget {
             style: TextStyle(
               fontSize: 14,
               fontFamily: 'Regular',
-              color: Colors.grey[400],
+              color: colorGreyStoryTitle,
             ),
           )
         ],
@@ -124,7 +125,7 @@ class Story extends StatelessWidget {
               shape: BoxShape.circle,
               color: Colors.white,
               border: Border.all(
-                color: Colors.blue,
+                color: colorBlue,
                 width: 3,
               ),
             ),

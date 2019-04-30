@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:facebook_messenge_ui/utils/string.dart';
+import 'package:facebook_messenge_ui/utils/colors.dart';
 
 class Header extends StatelessWidget {
   @override
@@ -18,7 +19,7 @@ class Header extends StatelessWidget {
                     profileUrl,
                   ),
                   fit: BoxFit.fill,
-                )),
+                ),),
           ),
           Padding(
             padding: const EdgeInsets.only(left: 16),
@@ -38,7 +39,7 @@ class Header extends StatelessWidget {
                 height: 40,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: Colors.grey[200],
+                  color: colorGreyBg,
                 ),
                 child: Icon(
                   Icons.camera_alt,
@@ -54,7 +55,7 @@ class Header extends StatelessWidget {
             margin: EdgeInsets.only(left: 16),
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color: Colors.grey[200],
+              color: colorGreyBg,
             ),
             child: Icon(
               Icons.edit,

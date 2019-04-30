@@ -1,3 +1,4 @@
+import 'package:facebook_messenge_ui/utils/colors.dart';
 import 'package:flutter/material.dart';
 
 class Search extends StatelessWidget {
@@ -13,7 +14,7 @@ class Search extends StatelessWidget {
           decoration: InputDecoration(
             hintText: 'Search',
             hintStyle: TextStyle(
-              color: Colors.grey[600],
+              color: colorGreySubTitle,
               fontSize: 16,
               fontFamily: 'Regular',
             ),
@@ -26,9 +27,9 @@ class Search extends StatelessWidget {
             contentPadding: EdgeInsets.symmetric(vertical: 0),
             prefixIcon: Icon(
               Icons.search,
-              color: Colors.grey[700],
+              color: colorGreySubTitle,
             ),
-            fillColor: Colors.grey[200],
+            fillColor: colorGreyBg,
             filled: true,
           ),
         ),
