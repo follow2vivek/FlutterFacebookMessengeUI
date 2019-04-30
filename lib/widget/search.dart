@@ -8,7 +8,7 @@ class Search extends StatelessWidget {
         hintColor: Colors.transparent,
       ),
       child: Container(
-        height: 45,
+        height: 42,
         child: TextField(
           decoration: InputDecoration(
             hintText: 'Search',
